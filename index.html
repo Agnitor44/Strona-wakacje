@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src ="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+   <!-- Link to the file hosted on your server, -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+
+
+    <title>Document</title>
+</head>
+<body>
+  <section class="nav">
+    <!-- <img src="./images/logo.png"> -->
+    <h1>Wakacje.pl</h1>
+    <ul>
+        
+        <li><a href="#about">O Nas</a></li>
+        <li><a href="#kup">Kup</a></li>
+        <li><a href="#contact">Kontakt</a></li> 
+    </ul>
+  </section>
+  <section class="header">
+    <div class="splide">
+        <div class="splide__track">
+            <ul class="splide__list">
+
+                <li class="splide__slide">
+
+                    <div class="slajd rzym">
+                        <h1>Rzym</h1>
+                        <button>Zarezerwuj</button>
+                    
+                    </div>
+
+                </li>
+
+                <li class="splide__slide">
+
+                    <div class="slajd paris">
+                        <h1>Paryż</h1>
+                        <button>Zarezerwuj</button>
+                    
+                    </div>
+
+                </li>
+
+                <li class="splide__slide">
+                    
+                    <div class="slajd london">
+                        <h1>Londyn</h1>
+                        <button>Zarezerwuj</button>
+                    
+                    </div>
+
+                </li>
+
+             
+
+                <li class="splide__slide">
+
+                    <div class="slajd ateny">
+                        <h1>Ateny</h1>
+                        <button>Zarezerwuj</button>
+                    
+                    </div>
+
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+  
+</section>
+<section class="opinie">
+<div class="person">
+<h1>Imie i nazwisko</h1>
+<img src="/images/typ1.jpg">
+<article>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora cumque nemo aspernatur. Expedita hic odio cumque odit 
+        nesciunt sit quam necessitatibus nihil commodi, ratione quod! Laudantium a aut corporis sequi
+         quia quibusdam, dicta repudiandae voluptatem quasi quas, dolorem, vel nobis.
+    </p>
+</article>
+</div>
+<div class="person">
+<h1>Imie i nazwisko</h1>
+<img src="/images/typ2.jpg">
+<article>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora cumque nemo aspernatur. Expedita hic odio cumque odit 
+        nesciunt sit quam necessitatibus nihil commodi, ratione quod! Laudantium a aut corporis sequi
+         quia quibusdam, dicta repudiandae voluptatem quasi quas, dolorem, vel nobis.
+    </p>
+</article>
+</div>
+<div class="person">
+<h1>Imie i nazwisko</h1>
+<img src="./images/typ3.jpg">
+<article>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora cumque nemo aspernatur. Expedita hic odio cumque odit 
+        nesciunt sit quam necessitatibus nihil commodi, ratione quod! Laudantium a aut corporis sequi
+         quia quibusdam, dicta repudiandae voluptatem quasi quas, dolorem, vel nobis.
+    </p>
+</article>
+</div>
+</section>
+<section id = 'kup' class="napis">
+<h1>
+<span>W</span><span>a</span><span>k</span><span>a</span><span>c</span><span>j</span><span>e</span>
+<div class="letsGo">
+    <h2>Nie czekaj!</h2>
+    <button><div>
+       Zamów 
+    </div></button>
+</div>
+
+</section>
+<section id = 'about' class="about">
+    <div>
+        <h1>
+            Bo fascynuje </br>
+             nas 
+             przygoda...
+        </h1>
+    </div>
+    <article>  
+        <p>
+            Jesteśmy firmą skupiającą się na spełnianiu twoich marzeń. <span>Wakacje.pl</span> wyśle cię na najwspanialszą przygodę w twoim życiu! Za niewielką 
+            cene pozwolimy ci zapomnieć o wszystkim i odpłynąć w kraine marzeń na egzotycznej plaży. Pakuj się i nie martw się o jutro! <span>Z Nami to możliwe!</span>
+        </p>
+    </article>
+</section>
+<section id = 'contact' class="contact">
+    <h1>Kontakt</h1>
+    <form>
+        <h2>Email</h2>
+        <input type="text">
+        <h2>Temat</h2>
+        <input type="text">
+        <h2>Treść</h2>
+     <textarea id="" cols="30" rows="10"></textarea>
+     <button>Wyślij</button>
+    </form>
+</section>
+<script>
+        new Splide( '.splide' ).mount();
+        var elms = document.getElementsByClassName( 'splide' );
+for ( var i = 0, len = elms.length; i < len; i++ ) {
+	new Splide( elms[ i ] ).mount();
+}
+</script>
+<script src="animation.js"></script>
+</body>
+</html>
